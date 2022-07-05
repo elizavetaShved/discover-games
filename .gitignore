@@ -1,6 +1,4 @@
 design/
-build/*
-!build/readme.md
 
 src/blocks/sprite-svg/img/sprite.svg
 src/blocks/sprite-png/sprite-png.scss
