@@ -1,12 +1,12 @@
 {
-  "name": "zoovod",
+  "name": "discover-games",
   "version": "0.0.1",
   "description": "",
   "author": "elizaveta_shvedchikova",
   "license": "WTFPL",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.thecoders.ru/e.shvedchikova/zoovod"
+    "url": "https://github.com/elizavetaShved/discover-games"
   },
   "scripts": {
     "start": "gulp",
