@@ -44,10 +44,23 @@ window.addEventListener('resize', () => {
   <div class="gl-layout-container">
     <header class="header">
       <div class="gl-page-content">
-        <div>header</div>
+        <div class="header__content-wrapper">
+          <div class="header__left-block"><a class="header__logo-link" href="/"><img class="header__logo" src="img/logo-header.png" /></a>
+            <div class="header__nav-links-wrapper"><a class="header__nav-link" href="#">guild</a><a class="header__nav-link--active header__nav-link" href="#">games</a><a class="header__nav-link" href="#">nft</a><a class="header__nav-link" href="#">airdrop</a></div>
+          </div>
+          <div class="header__right-block">
+            <div class="header__btns-wrapper">
+              <div>select</div><button class="header__btn" type="button">Log in</button><button class="header__btn" type="button">Sign up</button>
+            </div><button class="header__btn header__btn--blue" type="button">connect wallet</button>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="gl-page-content">content</div>
+    <div class="bread-crumbs">
+      <div class="gl-page-content">
+        <div>bread-crumbs</div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="gl-page-content">
         <div>footer</div>
