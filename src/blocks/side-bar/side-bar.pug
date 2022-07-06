@@ -1,0 +1,12 @@
+//- Все примеси в этом файле должны начинаться c имени блока (side-bar)
+
+mixin side-bar()
+  - const navLinkList = [{text: "guild", link: "#"}, {text: "games", link: "#", isActive: true}, {text: "nft", link: "#"}, {text: "airdrop", link: "#"}];
+
+  .side-bar#side-bar
+    .side-bar__container
+      .gl-page-content
+        .side-bar__content
+          .side-bar__links-wrapper
+            each navLink in navLinkList
+              a(href=navLink.link, class= navLink.isActive && "side-bar__link--active").side-bar__link= navLink.text

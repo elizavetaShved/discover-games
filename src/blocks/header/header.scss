@@ -1,7 +1,11 @@
+@import "src/scss/sizes";
+
 .header {
-  padding: 30px 0;
-  background-color: #160B3C;
-  border-bottom: 1px solid #311059;
+  background-color: var(--header-color);
+  border-bottom: 1px solid var(--header-border-color);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
 
   &__content-wrapper {
     display: flex;
@@ -17,15 +21,36 @@
 
   &__logo {
     height: 110px;
+
+    @include for-fl-down {
+      height: 70px;
+    }
+
+    @include for-hg-down {
+      height: 50px;
+    }
   }
 
   &__nav-links-wrapper {
     display: flex;
     align-items: center;
     margin: -14px -14px -14px 72px;
+
+    @include for-mx-down {
+      margin-left: 20px;
+    }
+
+    @include for-fl-down {
+      margin: -10px -10px -10px 20px;
+    }
+
+    @include for-hg-down {
+      margin-left: 0;
+    }
   }
 
   &__nav-link {
+    padding: 14px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1;
@@ -33,7 +58,11 @@
     text-transform: uppercase;
     color: var(--gray-text-color);
     transition: var(--transition-duration-short);
-    padding: 14px;
+
+    @include for-fl-down {
+      font-size: 14px;
+      padding: 10px;
+    }
 
     &:hover {
       color: var(--white-color);
@@ -45,7 +74,7 @@
     }
   }
 
-  &__right-block {
+  &__btns-container {
     display: flex;
     align-items: center;
   }
@@ -53,9 +82,29 @@
   &__btns-wrapper {
     display: flex;
     align-items: center;
-    margin: -16px 0 -16px -16px;
-    padding-right: 16px;
+    padding-right: 14px;
     border-right: 1px solid #75758A;
+    margin: -16px;
+    margin-left: 14px;
+
+    @include for-fl-down {
+      padding-right: 10px;
+      margin: -10px;
+      margin-left: 20px;
+    }
+
+    &:first-child {
+      margin-left: -16px;
+
+      @include for-fl-down {
+        margin-left: -10px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
   }
 
   &__btn {
@@ -69,6 +118,11 @@
     color: var(--white-color);
     transition: var(--transition-duration-short);
 
+    @include for-fl-down {
+      font-size: 14px;
+      padding: 10px;
+    }
+
     &:hover {
       color: var(--purple-color);
     }
@@ -79,6 +133,72 @@
       &:hover {
         color: var(--blue-color);
         text-decoration: underline;
+      }
+    }
+  }
+
+  $burger-size: 28px; // размеры кнопки
+  $burger-line-width: 16px; // ширина линии
+  $burger-line-height: 2px; // высота линии
+  $burger-line-margin: 4px; // отступ между линиями
+
+  &__burger-btn {
+    position: relative;
+    display: block;
+    width: $burger-size;
+    height: $burger-size;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: $burger-line-width;
+      transition: all var(--transition-duration-short) ease;
+      margin-left: calc((#{$burger-size} - #{$burger-line-width}) / 2);
+    }
+
+    /* верхняя и нижняя линии бургера */
+    &:before {
+      top: calc(
+        #{$burger-size} / 2 -
+        #{$burger-line-height} / 2 -
+        #{$burger-line-margin} -
+        #{$burger-line-height}
+      );
+      height: calc(
+        #{$burger-line-height} * 3 +
+        #{$burger-line-margin} * 2
+      );
+      border-top: $burger-line-height solid var(--white-color);
+      border-bottom: $burger-line-height solid var(--white-color);
+    }
+
+    /* средняя линия бургера */
+    &:after {
+      top: calc(
+        #{$burger-size} / 2 -
+        #{$burger-line-height} / 2
+      );
+      height: $burger-line-height;
+      background-color: var(--white-color);
+    }
+
+    &.mod-close {
+      &:before, &:after {
+        top: 50%;
+        width: 20px;
+      }
+
+      &:before {
+        border: none;
+        height: $burger-line-height;
+        background: var(--white-color);
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
       }
     }
   }

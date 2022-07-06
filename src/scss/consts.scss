@@ -2,6 +2,15 @@
 
 :root {
   --page-content-padding: 32px;
+  --header-height: 166px;
+
+  @include for-fl-down {
+    --header-height: 94px;
+  }
+
+  @include for-bg-down {
+    --header-height: 74px;
+  }
 
   @include for-md-down {
     --page-content-padding: 24px;
@@ -15,6 +24,8 @@
   --gray-light-color: #C9C9C9;
   --blue-color: #2074D6;
   --layout-color: #080A2C;
+  --header-color: #160B3C;
+  --header-border-color: #311059;
 
   /* transitions */
   --transition-duration-short: 200ms;
@@ -27,7 +38,8 @@
 
   /* z-index */
   --z-index-header: 2;
-  --z-index-modal: 3;
+  --z-index-side-bar: 3;
+  --z-index-modal: 4;
 
   /* основной шрифт проета */
   --font-family-main: 'GothamPro', sans-serif;

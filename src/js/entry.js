@@ -7,6 +7,7 @@
 
 /* global require */
 
+require('../blocks/header/header.js');
 require('./script.js');
 
 /*!*
