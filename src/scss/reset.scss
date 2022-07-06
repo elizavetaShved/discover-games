@@ -31,10 +31,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 }
 
 body {
+  font-family: var(--font-family-main);
   overflow-x: hidden;
   font-size: 14px;
   line-height: 16px;
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 a {
@@ -113,6 +114,6 @@ nav ul {
 }
 
 ::selection {
-  background-color: var(--main-color);
-  color: #fff;
+  background-color: var(--white-color);
+  color: var(--purple-color);
 }

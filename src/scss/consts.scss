@@ -8,8 +8,11 @@
   }
 
   /* colors */
-  --main-color: #06C506;
-  --text-color: #1A1A1A;
+  --purple-color: #962FED;
+  --white-color: #FFFFFF;
+  --gray-text-color: rgba(255, 255, 255, 0.2);
+  --gray-light-color: #C9C9C9;
+  --blue-color: #2074D6;
 
   /* transitions */
   --transition-duration-short: 200ms;
@@ -25,6 +28,6 @@
   --z-index-modal: 3;
 
   /* основной шрифт проета */
-  --font-family-inter: 'Inter', sans-serif;
+  --font-family-main: 'GothamPro', sans-serif;
 }
 
