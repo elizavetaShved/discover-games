@@ -11,8 +11,9 @@ mixin footer()
           each linkItem in linksArr
             a(href=linkItem.href).footer__link= linkItem.text
 
-        a(href="/").footer__logo-link
-          img(src="img/logo-footer.png", alt="logo-footer").footer__logo
+        .footer__logo-link-container
+          a(href="/").footer__logo-link
+            img(src="img/logo-footer.png", alt="logo-footer").footer__logo
 
         .footer__right-block
           .footer__social-container
@@ -22,7 +23,7 @@ mixin footer()
           .gl-fl-hide
             +lang-select()
 
-          .footer__btns-wrapper
+          .footer__btns-wrapper.gl-hg-hide
             button(type="button").footer__btn Log in
             button(type="button").footer__btn Sign up
 

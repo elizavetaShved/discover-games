@@ -21,6 +21,6 @@ export class Header {
   }
 }
 
-window.onload = () => {
+window.addEventListener('load', () => {
   new Header();
-}
+})

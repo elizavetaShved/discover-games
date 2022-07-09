@@ -12,6 +12,6 @@ export class LangSelect {
   }
 }
 
-window.onload = () => {
+window.addEventListener('load', () => {
   new LangSelect();
-}
+});
