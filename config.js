@@ -16,6 +16,7 @@ let config = {
     'src/scss/reset.scss',
     'src/scss/global.scss',
     'src/scss/slider.scss',
+    'src/scss/select-custom.scss',
     // 'somePackage/dist/somePackage.css', // для 'node_modules/somePackage/dist/somePackage.css',
   ],
   'addStyleAfter': [

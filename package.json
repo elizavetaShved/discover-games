@@ -79,6 +79,7 @@
     "baron": "^3.0.3",
     "choices.js": "^9.0.1",
     "closest": "0.0.1",
+    "slim-select": "^1.27.1",
     "svg4everybody": "^2.1.8",
     "swiper": "^8.2.6"
   }

@@ -4,9 +4,21 @@ mixin side-bar()
   - const navLinkList = [{text: "guild", link: "#"}, {text: "games", link: "#", isActive: true}, {text: "nft", link: "#"}, {text: "airdrop", link: "#"}];
 
   .side-bar#side-bar
-    .side-bar__container
+    .side-bar__container#side-bar-content
       .gl-page-content
         .side-bar__content
+          .side-bar__select-container.gl-lang-select
+            select#slim-select
+              option(value="en") EN
+              option(value="ru") RU
+
           .side-bar__links-wrapper
             each navLink in navLinkList
               a(href=navLink.link, class= navLink.isActive && "side-bar__link--active").side-bar__link= navLink.text
+
+          .side-bar__btns-container
+            .side-bar__btns-wrapper
+              button.side-bar__btn Log in
+              button.side-bar__btn Sign up
+            .side-bar__btns-wrapper
+              button(type="button").side-bar__btn.side-bar__btn--blue connect wallet

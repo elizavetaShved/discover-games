@@ -17,7 +17,11 @@ mixin header()
         .header__right-block
           div.header__btns-container
             .header__btns-wrapper.gl-bg-hide
-              div select
+              .gl-lang-select
+                select#slim-select
+                  option(value="en") EN
+                  option(value="ru") RU
+
               button(type="button").header__btn Log in
               button(type="button").header__btn Sign up
 
