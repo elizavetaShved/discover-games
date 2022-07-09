@@ -9,6 +9,7 @@
 
 require('../blocks/header/header.js');
 require('../blocks/lang-select/lang-select.js');
+require('../blocks/main-slider/main-slider.js');
 require('../blocks/side-bar/side-bar.js');
 require('./script.js');
 

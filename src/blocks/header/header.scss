@@ -60,7 +60,7 @@
     line-height: 1;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--gray-text-color);
+    color: var(--gray-color-opasity);
     transition: var(--transition-duration-short);
 
     @include for-fl-down {

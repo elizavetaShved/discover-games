@@ -24,12 +24,13 @@
   --purple-color: #962FED;
   --white-color: #FFFFFF;
   --black-color: #000;
-  --gray-text-color: rgba(255, 255, 255, 0.2);
+  --gray-color-opasity: rgba(255, 255, 255, 0.2);
   --gray-middle-color: #75758A;
   --gray-light-color: #C9C9C9;
   --blue-color: #2074D6;
   --layout-color: #080A2C;
   --header-color: #160B3C;
+  --purple-background: #1F0D5D;
   --header-border-color: #311059;
 
   /* transitions */
@@ -38,8 +39,8 @@
 
   /* border-radius */
   --border-radius-small: 6px;
-  --border-radius-middle: 12px;
-  --border-radius-big: 32px;
+  --border-radius-middle: 8px;
+  --border-radius-big: 16px;
 
   /* z-index */
   --z-index-header: 2;

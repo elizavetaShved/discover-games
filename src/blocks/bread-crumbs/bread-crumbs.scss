@@ -28,7 +28,7 @@
     position: relative;
     white-space: nowrap;
     transition: color var(--transition-duration-short);
-    color: var(--gray-text-color);
+    color: var(--gray-color-opasity);
 
     &--link {
       color: var(--white-color);

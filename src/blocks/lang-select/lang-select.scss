@@ -120,7 +120,7 @@ $selected-padding: 6px;
 
         &:hover, &.ss-highlighted {
           color: var(--purple-color);
-          background-color: var(--gray-text-color);
+          background-color: var(--gray-color-opasity);
         }
 
         &.ss-disabled {
