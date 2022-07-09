@@ -1,7 +1,8 @@
 $selected-padding: 6px;
 
-.gl-lang-select {
+.lang-select {
   margin: -$selected-padding;
+  width: min-content;
 
   .ss-main {
     position: relative;

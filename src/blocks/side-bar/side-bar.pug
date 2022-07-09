@@ -7,10 +7,8 @@ mixin side-bar()
     .side-bar__container#side-bar-content
       .gl-page-content
         .side-bar__content
-          .side-bar__select-container.gl-lang-select
-            select#slim-select
-              option(value="en") EN
-              option(value="ru") RU
+          .side-bar__select-container
+            +lang-select()
 
           .side-bar__links-wrapper
             each navLink in navLinkList

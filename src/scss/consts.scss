@@ -4,6 +4,10 @@
   --page-content-padding: 32px;
   --header-height: 166px;
 
+  @include for-mx-down {
+    --header-height: 110px;
+  }
+
   @include for-fl-down {
     --header-height: 94px;
   }
@@ -19,6 +23,7 @@
   /* colors */
   --purple-color: #962FED;
   --white-color: #FFFFFF;
+  --black-color: #000;
   --gray-text-color: rgba(255, 255, 255, 0.2);
   --gray-middle-color: #75758A;
   --gray-light-color: #C9C9C9;

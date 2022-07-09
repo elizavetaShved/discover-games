@@ -8,6 +8,8 @@
 /* global require */
 
 require('../blocks/header/header.js');
+require('../blocks/lang-select/lang-select.js');
+require('../blocks/side-bar/side-bar.js');
 require('./script.js');
 
 /*!*

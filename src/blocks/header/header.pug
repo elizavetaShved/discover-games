@@ -8,7 +8,7 @@ mixin header()
       .header__content-wrapper
         .header__left-block
           a(href="/").header__logo-link
-            img(src="img/logo-header.png").header__logo
+            img(src="img/logo-header.png", alt="logo-header").header__logo
 
           .header__nav-links-wrapper.gl-bg-hide
             each navLink in navLinkList
@@ -17,10 +17,7 @@ mixin header()
         .header__right-block
           div.header__btns-container
             .header__btns-wrapper.gl-bg-hide
-              .gl-lang-select
-                select#slim-select
-                  option(value="en") EN
-                  option(value="ru") RU
+              +lang-select()
 
               button(type="button").header__btn Log in
               button(type="button").header__btn Sign up
