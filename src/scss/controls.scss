@@ -1,0 +1,38 @@
+$main-btn-box-shadow: inset 0 4px 13px rgba(255, 255, 255, 0.25);
+$main-btn-border-radius: var(--border-radius-big);
+
+.gl-btn {
+  position: relative;
+  background: radial-gradient(66.58% 146.41% at -2.19% 16.98%, #14BDFF 0%, rgba(3, 57, 89, 0) 74.36%), radial-gradient(80.2% 129.9% at 96.3% 0%, #C51BFF 0%, rgba(3, 57, 89, 0) 100%), radial-gradient(72.79% 65.22% at 80.51% 92.28%, rgba(68, 220, 255, 0.71) 0%, rgba(120, 199, 217, 0) 84.87%), #3042FF;
+  box-shadow: $main-btn-box-shadow;
+  border-radius: $main-btn-border-radius;
+  z-index: 1;
+  padding: 10px;
+  width: 168px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity var(--transition-duration-short);
+    box-shadow: $main-btn-box-shadow;
+    border-radius: $main-btn-border-radius;
+    opacity: 0;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+      background: radial-gradient(66.58% 146.41% at -2.19% 16.98%, #53ccff 0%, rgba(12, 77, 119, 0) 74.36%), radial-gradient(80.2% 129.9% at 96.3% 0%, #ce59fd 0%, rgba(7, 66, 101, 0) 100%), radial-gradient(72.79% 65.22% at 80.51% 92.28%, rgba(68, 220, 255, 0.71) 0%, rgba(120, 199, 217, 0) 84.87%), #3042FF
+    }
+  }
+}

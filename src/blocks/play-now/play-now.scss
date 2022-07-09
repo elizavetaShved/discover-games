@@ -1,0 +1,150 @@
+@import "src/scss/sizes";
+
+.play-now {
+  grid-column: 1 / 13;
+
+  &__content {
+    display: flex;
+  }
+
+  &__content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content auto;
+    margin-bottom: 28px;
+  }
+
+  &__logo {
+    height: 54px;
+    margin-right: 20px;
+    grid-row: 1 / 4;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px
+  }
+
+  &__control {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    transition: all var(--transition-duration-short);
+
+    &--like {
+      background-image: url("/img/play-now-icons/heart-empty.svg");
+      margin-bottom: -6px;
+
+      &:hover {
+        background-image: url("/img/play-now-icons/heart-filled.svg");
+      }
+    }
+
+    &--home {
+      background-image: url("/img/play-now-icons/home-empty.svg");
+
+      &:hover {
+        background-image: url("/img/play-now-icons/home-empty.svg");
+      }
+    }
+
+    &--twitter {
+      background-image: url("/img/social/twitter-empty.svg");
+
+      &:hover {
+        background-image: url("/img/social/twitter-empty.svg");
+      }
+    }
+
+    &--discord {
+      background-image: url("/img/social/discord-empty.svg");
+
+      &:hover {
+        background-image: url("/img/social/discord-empty.svg");
+      }
+    }
+
+    &--telegram {
+      background-image: url("/img/social/telegram-empty.svg");
+
+      &:hover {
+        background-image: url("/img/social/telegram-empty.svg");
+      }
+    }
+
+    &--facebook {
+      background-image: url("/img/social/facebook-empty.svg");
+
+      &:hover {
+        background-image: url("/img/social/facebook-empty.svg");
+      }
+    }
+
+    &--youtube {
+      background-image: url("/img/social/youtube-empty.svg");
+
+      &:hover {
+        background-image: url("/img/social/youtube-empty.svg");
+      }
+    }
+  }
+
+  &__broadcast-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__broadcast-live {
+    padding: 1px 2px;
+    background: var(--green-dark-opasity-color);
+    border: 1px solid var(--green-color);
+    border-radius: var(--border-radius-tiny);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--green-color);
+  }
+
+  &__broadcast-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--white-color);
+    padding: 2px 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-tiny);
+    margin-left: 8px;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--white-color);
+  }
+
+  &__links-container {
+    display: flex;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+  }
+}

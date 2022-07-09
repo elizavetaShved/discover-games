@@ -1,7 +1,7 @@
 @import "src/scss/sizes";
 
 .main-slider {
-  margin-bottom: 20px;
+  grid-column: 1 / 25;
 
   &__content {
     position: relative;
@@ -12,7 +12,7 @@
 
     @include for-md-up {
       background: var(--purple-background);
-      border-radius: var(--border-radius-big);
+      border-radius: var(--border-radius-huge);
     }
   }
 
