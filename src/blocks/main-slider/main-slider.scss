@@ -1,7 +1,9 @@
 @import "src/scss/sizes";
 
 .main-slider {
-  grid-column: 1 / 25;
+  @include for-md-up {
+    grid-column: 1 / 25;
+  }
 
   &__content {
     position: relative;

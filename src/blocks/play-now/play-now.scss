@@ -1,10 +1,8 @@
 @import "src/scss/sizes";
 
 .play-now {
-  grid-column: 1 / 13;
-
-  @include for-md-down {
-    grid-column: 1 / 25;
+  @include for-md-up {
+    grid-column: 1 / 13;
   }
 
   &__content {

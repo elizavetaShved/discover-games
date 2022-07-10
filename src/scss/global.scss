@@ -65,6 +65,10 @@
   @include for-hg-down {
     grid-gap: 16px;
   }
+
+  @include for-md-down {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gl-block-gradient {
