@@ -119,18 +119,53 @@ window.addEventListener('resize', () => {
               <div class="reviews__estimation-wrapper">
                 <div class="reviews__estimation-title">Reviews</div>
                 <div class="reviews__estimation-num">4.7</div>
-                <div class="reviews__estimation-stars-wrapper">
-                  <div class="reviews__estimation-star"></div>
-                  <div class="reviews__estimation-star"></div>
-                  <div class="reviews__estimation-star"></div>
-                  <div class="reviews__estimation-star"></div>
-                </div>
+                <div class="reviews__estimation-stars-wrapper"><svg width="20" height="20" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="gradient">
+                        <stop stop-color="red" offset="0%"></stop>
+                        <stop stop-color="red" offset="100%"></stop>
+                        <stop stop-color="transparent" offset="100%"></stop>
+                        <stop stop-color="transparent" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)" d="M10.246 16.81 10 16.67l-.246.14-4.534 2.563c-.692.391-1.584-.203-1.43-1.086l.887-5.096a1 1 0 0 0-.278-.879L.805 8.717c-.61-.61-.247-1.647.546-1.758l4.881-.689a1 1 0 0 0 .77-.573l2.114-4.615a.962.962 0 0 1 1.768 0l2.114 4.615a1 1 0 0 0 .77.573l4.881.689c.793.111 1.156 1.148.546 1.758l-3.594 3.595a1 1 0 0 0-.278.879l.887 5.096c.154.883-.738 1.477-1.43 1.086l-4.534-2.564Z" stroke="#fff"></path>
+                  </svg><svg width="20" height="20" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="gradient">
+                        <stop stop-color="red" offset="0%"></stop>
+                        <stop stop-color="red" offset="66%"></stop>
+                        <stop stop-color="transparent" offset="66%"></stop>
+                        <stop stop-color="transparent" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)" d="M10.246 16.81 10 16.67l-.246.14-4.534 2.563c-.692.391-1.584-.203-1.43-1.086l.887-5.096a1 1 0 0 0-.278-.879L.805 8.717c-.61-.61-.247-1.647.546-1.758l4.881-.689a1 1 0 0 0 .77-.573l2.114-4.615a.962.962 0 0 1 1.768 0l2.114 4.615a1 1 0 0 0 .77.573l4.881.689c.793.111 1.156 1.148.546 1.758l-3.594 3.595a1 1 0 0 0-.278.879l.887 5.096c.154.883-.738 1.477-1.43 1.086l-4.534-2.564Z" stroke="#fff"></path>
+                  </svg><svg width="20" height="20" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="gradient">
+                        <stop stop-color="red" offset="0%"></stop>
+                        <stop stop-color="red" offset="94%"></stop>
+                        <stop stop-color="transparent" offset="94%"></stop>
+                        <stop stop-color="transparent" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)" d="M10.246 16.81 10 16.67l-.246.14-4.534 2.563c-.692.391-1.584-.203-1.43-1.086l.887-5.096a1 1 0 0 0-.278-.879L.805 8.717c-.61-.61-.247-1.647.546-1.758l4.881-.689a1 1 0 0 0 .77-.573l2.114-4.615a.962.962 0 0 1 1.768 0l2.114 4.615a1 1 0 0 0 .77.573l4.881.689c.793.111 1.156 1.148.546 1.758l-3.594 3.595a1 1 0 0 0-.278.879l.887 5.096c.154.883-.738 1.477-1.43 1.086l-4.534-2.564Z" stroke="#fff"></path>
+                  </svg><svg width="20" height="20" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="gradient">
+                        <stop stop-color="red" offset="0%"></stop>
+                        <stop stop-color="red" offset="90%"></stop>
+                        <stop stop-color="transparent" offset="90%"></stop>
+                        <stop stop-color="transparent" offset="100%"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)" d="M10.246 16.81 10 16.67l-.246.14-4.534 2.563c-.692.391-1.584-.203-1.43-1.086l.887-5.096a1 1 0 0 0-.278-.879L.805 8.717c-.61-.61-.247-1.647.546-1.758l4.881-.689a1 1 0 0 0 .77-.573l2.114-4.615a.962.962 0 0 1 1.768 0l2.114 4.615a1 1 0 0 0 .77.573l4.881.689c.793.111 1.156 1.148.546 1.758l-3.594 3.595a1 1 0 0 0-.278.879l.887 5.096c.154.883-.738 1.477-1.43 1.086l-4.534-2.564Z" stroke="#fff"></path>
+                  </svg></div>
               </div>
               <div class="reviews__details">
                 <div class="reviews__detail-wrapper">
                   <div class="reviews__detail-title">fun to play</div>
                   <div class="reviews__detail-line-wrapper">
-                    <!-- `width: ${Math.ceil(detail.num * 100 / 5)}%`-->
+                    <!-- `высчитывается: "width: ${Math.ceil(detail.num * 100 / 5)}%"-->
                     <div class="reviews__detail-line" style="width: 100%"></div>
                   </div>
                   <div class="reviews__detail-num">5.0</div>
@@ -138,7 +173,7 @@ window.addEventListener('resize', () => {
                 <div class="reviews__detail-wrapper">
                   <div class="reviews__detail-title">earnings</div>
                   <div class="reviews__detail-line-wrapper">
-                    <!-- `width: ${Math.ceil(detail.num * 100 / 5)}%`-->
+                    <!-- `высчитывается: "width: ${Math.ceil(detail.num * 100 / 5)}%"-->
                     <div class="reviews__detail-line" style="width: 66%"></div>
                   </div>
                   <div class="reviews__detail-num">3.3</div>
@@ -146,7 +181,7 @@ window.addEventListener('resize', () => {
                 <div class="reviews__detail-wrapper">
                   <div class="reviews__detail-title">Affordability</div>
                   <div class="reviews__detail-line-wrapper">
-                    <!-- `width: ${Math.ceil(detail.num * 100 / 5)}%`-->
+                    <!-- `высчитывается: "width: ${Math.ceil(detail.num * 100 / 5)}%"-->
                     <div class="reviews__detail-line" style="width: 94%"></div>
                   </div>
                   <div class="reviews__detail-num">4.7</div>
@@ -154,7 +189,7 @@ window.addEventListener('resize', () => {
                 <div class="reviews__detail-wrapper">
                   <div class="reviews__detail-title">Easy to Learn</div>
                   <div class="reviews__detail-line-wrapper">
-                    <!-- `width: ${Math.ceil(detail.num * 100 / 5)}%`-->
+                    <!-- `высчитывается: "width: ${Math.ceil(detail.num * 100 / 5)}%"-->
                     <div class="reviews__detail-line" style="width: 90%"></div>
                   </div>
                   <div class="reviews__detail-num">4.5</div>

@@ -9,17 +9,21 @@ mixin reviews()
         .reviews__estimation-title Reviews
         .reviews__estimation-num 4.7
         .reviews__estimation-stars-wrapper
-          .reviews__estimation-star
-          .reviews__estimation-star
-          .reviews__estimation-star
-          .reviews__estimation-star
+          each detail in details
+            svg(width="20", height="20", fill="none", viewBox="0 0 20 20", xmlns="http://www.w3.org/2000/svg")
+              defs
+                linearGradient(id="gradient")
+                  stop(stop-color="red" offset="0%")
+                  stop(stop-color="red" offset=`${ Math.ceil(detail.num * 100 / 5) }%`)
+                  stop(stop-color="transparent" offset=`${ Math.ceil(detail.num * 100 / 5) }%`)
+                  stop(stop-color="transparent" offset="100%")
+              path(fill="url(#gradient)", d="M10.246 16.81 10 16.67l-.246.14-4.534 2.563c-.692.391-1.584-.203-1.43-1.086l.887-5.096a1 1 0 0 0-.278-.879L.805 8.717c-.61-.61-.247-1.647.546-1.758l4.881-.689a1 1 0 0 0 .77-.573l2.114-4.615a.962.962 0 0 1 1.768 0l2.114 4.615a1 1 0 0 0 .77.573l4.881.689c.793.111 1.156 1.148.546 1.758l-3.594 3.595a1 1 0 0 0-.278.879l.887 5.096c.154.883-.738 1.477-1.43 1.086l-4.534-2.564Z", stroke="#fff")
 
       .reviews__details
         each detail in details
           .reviews__detail-wrapper
             .reviews__detail-title= detail.title
             .reviews__detail-line-wrapper
-              // `width: ${Math.ceil(detail.num * 100 / 5)}%`
+              // `высчитывается: "width: ${Math.ceil(detail.num * 100 / 5)}%"
               div(style=`width: ${Math.ceil(detail.num * 100 / 5)}%`).reviews__detail-line
             .reviews__detail-num= Number.isInteger(detail.num) ? `${detail.num}.0` : detail.num
-

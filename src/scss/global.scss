@@ -57,10 +57,22 @@
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(24, 1fr);
+
+  @include for-fl-down {
+    grid-gap: 20px;
+  }
+
+  @include for-hg-down {
+    grid-gap: 16px;
+  }
 }
 
 .gl-block-gradient {
   background: radial-gradient(90.2% 118.9% at 146.3% 0,#ca2dff 0,rgba(3,57,89,0) 100%),#140359;
   border-radius: var(--border-radius-huge);
   padding: 30px;
+
+  @include for-hg-down {
+    padding: 26px 16px;
+  }
 }
