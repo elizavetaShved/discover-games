@@ -71,12 +71,16 @@
   }
 }
 
-.gl-block-gradient {
-  background: radial-gradient(90.2% 118.9% at 146.3% 0,#ca2dff 0,rgba(3,57,89,0) 100%),#140359;
+.gl-block {
+  background: var(--purple-block-color);
   border-radius: var(--border-radius-huge);
   padding: 30px;
 
   @include for-hg-down {
     padding: 26px 16px;
+  }
+
+  &--gradient {
+    background: radial-gradient(90.2% 118.9% at 146.3% 0,#ca2dff 0,rgba(3,57,89,0) 100%),#140359;
   }
 }
