@@ -74,6 +74,31 @@
       padding: 8px;
     }
 
+    iframe {
+      width: 626px;
+      height: 356px;
+
+      @include for-md-down {
+        width: calc(#{$small} - (16px + var(--page-content-padding)) * 2);
+        height: calc((#{$small} - (16px + var(--page-content-padding)) * 2) * 356 / 626);
+      }
+
+      @include for-sm-down {
+        width: calc(#{$mobile} - (16px + var(--page-content-padding)) * 2);
+        height: calc((#{$mobile} - (16px + var(--page-content-padding)) * 2) * 356 / 626);
+      }
+
+      @include for-mb-down {
+        width: calc(#{$xs} - (16px + var(--page-content-padding)) * 2);
+        height: calc((#{$xs} - (16px + var(--page-content-padding)) * 2) * 356 / 626);
+      }
+
+      @include for-xs-down {
+        width: calc(#{$xxs} - (16px + var(--page-content-padding)) * 2);
+        height: calc((#{$xxs} - (16px + var(--page-content-padding)) * 2) * 356 / 626);
+      }
+    }
+
     p, li {
       font-weight: 400;
       font-size: 16px;
