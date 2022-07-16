@@ -49,6 +49,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  color: var(--white-color);
 
   &[disabled] {
     cursor: default;

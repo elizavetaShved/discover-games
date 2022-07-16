@@ -3,6 +3,7 @@
 .main-info {
   @include for-md-up {
     grid-column: 1 / 18;
+    grid-row: 3 / 8;
   }
 
   &__header {

@@ -1,0 +1,28 @@
+@import "src/scss/sizes";
+
+.learn {
+  @include for-md-up {
+    grid-column: 18 / 25;
+  }
+
+  &__content-wrapper {
+    display: flex;
+  }
+
+  &__content-icon {
+    margin-left: 30px;
+    height: 80px;
+  }
+
+  &__btns-wrapper {
+    display: flex;
+    width: 80%;
+  }
+
+  &__btn {
+    white-space: nowrap;
+    & + & {
+      margin-left: 10px;
+    }
+  }
+}

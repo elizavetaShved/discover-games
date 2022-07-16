@@ -13,7 +13,6 @@ $main-btn-border-radius: var(--border-radius-big);
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  color: var(--white-color);
 
   &:before {
     position: absolute;
@@ -34,5 +33,22 @@ $main-btn-border-radius: var(--border-radius-big);
       opacity: 1;
       background: radial-gradient(66.58% 146.41% at -2.19% 16.98%, #53ccff 0%, rgba(12, 77, 119, 0) 74.36%), radial-gradient(80.2% 129.9% at 96.3% 0%, #ce59fd 0%, rgba(7, 66, 101, 0) 100%), radial-gradient(72.79% 65.22% at 80.51% 92.28%, rgba(68, 220, 255, 0.71) 0%, rgba(120, 199, 217, 0) 84.87%), #3042FF
     }
+  }
+
+  &:disabled {
+    background: var(--purple-dark-background);
+    color: var(--gray-color-opasity);
+    box-shadow: none;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &--small {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px;
+    border-radius: 3px;
   }
 }
