@@ -14,7 +14,10 @@
 
   &__list {
     position: relative;
-    width: 100%;
+
+    @include for-md-down {
+      width: calc(100vw - (var(--page-content-padding) + var(--block-padding-side)) * 2);
+    }
   }
 
   &__swiper-container {

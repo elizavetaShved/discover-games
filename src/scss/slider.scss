@@ -6,6 +6,8 @@
 @import "src/scss/sizes";
 
 .gl-swiper {
+  padding-bottom: 32px;
+
   &__swiper-wrapper {
     display: flex;
     position: relative;
@@ -68,6 +70,7 @@
   &__pagination {
     display: flex;
     justify-content: center;
+    bottom: 0 !important;
 
     &.swiper-pagination {
       z-index: 1;
