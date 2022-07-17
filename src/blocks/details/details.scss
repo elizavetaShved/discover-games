@@ -43,7 +43,7 @@
   &__code-wrapper {
     padding: 4px 8px;
     background: var(--blue-dark-color);
-    border-radius: 3px;
+    border-radius: var(--border-radius-verty-small);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -214,7 +214,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 18px;
-    border-radius: 3px;
+    border-radius: var(--border-radius-verty-small);
 
     @include for-fl-down {
       flex-direction: column;

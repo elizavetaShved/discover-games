@@ -49,6 +49,22 @@ $main-btn-border-radius: var(--border-radius-big);
     font-size: 10px;
     line-height: 12px;
     padding: 8px;
-    border-radius: 3px;
+    border-radius: var(--border-radius-verty-small);
+  }
+}
+
+.gl-btn-secondary {
+  padding: 10px 18px;
+  font-weight: 700;
+  background-color: var(--purple-color);
+  border-radius: var(--border-radius-verty-small);
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: all var(--transition-duration-short);
+
+  &:hover {
+    background-color: var(--white-color);
+    color: var(--purple-color);
   }
 }

@@ -11,12 +11,13 @@ Swiper.use([Navigation, Pagination]);
 export default class Slider {
   swiper;
 
-  constructor(sliderElem, slidesPerView, btnPrev, btnNext, paginationElem, customGap, isLoop) {
+  constructor(sliderElem, slidesPerView, slidesPerColumn, btnPrev, btnNext, paginationElem, customGap, isLoop) {
 
     const gap = customGap ? +customGap : 30;
 
     this.swiper = new Swiper(sliderElem, {
       slidesPerView: slidesPerView.mb || slidesPerView.md || slidesPerView.hg || slidesPerView.fl || slidesPerView.mx,
+      slidesPerColumn: 2,
       lazy: true,
       keyboard: true,
       spaceBetween: 16,

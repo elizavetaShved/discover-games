@@ -13,6 +13,7 @@ export class Marketplace {
     new Slider(
       swiperContainerElem,
       { mx: 5, hg: 4, md: 3, mb: 1 },
+      null,
       btnPrev,
       btnNext,
       null,
