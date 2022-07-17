@@ -1,6 +1,6 @@
-import { Navigation, Swiper, Pagination } from 'swiper';
+import { Navigation, Swiper, Pagination, Grid } from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Grid, Navigation, Pagination]);
 
 /**
  Входящие араметры:
@@ -17,7 +17,9 @@ export default class Slider {
 
     this.swiper = new Swiper(sliderElem, {
       slidesPerView: slidesPerView.mb || slidesPerView.md || slidesPerView.hg || slidesPerView.fl || slidesPerView.mx,
-      slidesPerColumn: 2,
+      grid: {
+        rows: slidesPerColumn,
+      },
       lazy: true,
       keyboard: true,
       spaceBetween: 16,

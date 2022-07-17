@@ -12,7 +12,7 @@ export class MainSlider {
     new Slider(
       swiperContainerElem,
       { mx: 4, hg: 3, md: 1.5, mb: 1 },
-      null,
+      1,
       btnPrev,
       btnNext,
       null,

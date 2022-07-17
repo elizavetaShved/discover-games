@@ -21,17 +21,16 @@ class ReviewsList {
       }
     })
 
-    // todo доделать
-    // new Slider(
-    //   swiperContainerElem,
-    //   { mx: 1 },
-    //   5,
-    //   null,
-    //   null,
-    //   null,
-    //   20,
-    //   false
-    // );
+    new Slider(
+      swiperContainerElem,
+      { mx: 1 },
+      5,
+      null,
+      null,
+      null,
+      20,
+      false
+    );
   }
 
   setActiveContent(indexCheck) {

@@ -18,13 +18,9 @@
   }
 
   &__swiper-container {
-    overflow-x: hidden;
-  }
-
-  &__swiper-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    overflow: hidden;
+    //height: 1340px; // todo испр
+    height: 1200px;
   }
 
   &__item-wrapper {
@@ -32,6 +28,7 @@
     background: radial-gradient(243.28% 101.19% at 42.43% 105.46%, #00277A 0%, rgba(3, 57, 89, 0) 74.36%), radial-gradient(119.49% 241.92% at 85.11% -112.37%, rgba(202, 45, 255, 0.2) 52.52%, rgba(3, 57, 89, 0) 100%), #140359;
     border-radius: var(--border-radius-huge);
     display: flex;
+    height: auto;
   }
 
   &__item-repost {

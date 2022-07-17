@@ -10,11 +10,10 @@ mixin reviews-list()
 
     ul.reviews-list__list
       .swiper.reviews-list__swiper-container.gl-swiper.swiper-container#js-swiper-container
-        //.gl-swiper__swiper-wrapper.swiper-wrapper
-        .reviews-list__swiper-wrapper
-          each item in reviewsList
+        .gl-swiper__swiper-wrapper.swiper-wrapper
+          each item, index in reviewsList
             li.reviews-list__item-wrapper.swiper-slide
-              .reviews-list__item-repost= item.repostNum
+              .reviews-list__item-repost= index
               .reviews-list__item-content
                 .reviews-list__item-header
                   +rating(item.assessment)

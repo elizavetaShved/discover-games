@@ -12,7 +12,7 @@ export class SimilarGames {
     new Slider(
       swiperContainerElem,
       { mx: 5, hg: 4, md: 2, mb: 1 },
-      null,
+      1,
       btnPrev,
       btnNext,
       null,
