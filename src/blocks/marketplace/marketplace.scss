@@ -1,0 +1,7 @@
+@import "src/scss/sizes";
+
+.marketplace {
+  @include for-md-up {
+    grid-column: 1 / 25;
+  }
+}

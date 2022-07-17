@@ -1,14 +1,6 @@
 @import "src/scss/sizes";
 
 .more-articles {
-  @include for-fl-up {
-    grid-column: 18 / 25;
-  }
-
-  @include for-md-up {
-    grid-column: 17 / 25;
-  }
-
   &__header-wrapper {
     margin-bottom: 28px;
   }

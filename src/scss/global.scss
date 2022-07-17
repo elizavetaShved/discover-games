@@ -3,9 +3,13 @@
 
 .gl-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 35px;
   line-height: 1;
   margin-bottom: 10px;
+
+  &--small {
+    font-size: 18px;
+  }
 }
 
 .gl-subtitle {
@@ -64,19 +68,26 @@
 
 .gl-grid-container-24 {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: var(--main-grid-gap);
   grid-template-columns: repeat(24, 1fr);
-
-  @include for-fl-down {
-    grid-gap: 20px;
-  }
-
-  @include for-hg-down {
-    grid-gap: 16px;
-  }
+  grid-auto-rows: auto;
 
   @include for-md-down {
     grid-template-columns: 1fr;
+  }
+}
+
+.gl-grid-column-quarter-end {
+  display: grid;
+  grid-gap: var(--main-grid-gap);
+  grid-auto-rows: min-content;
+
+  @include for-fl-up {
+    grid-column: 18 / 25;
+  }
+
+  @include for-md-up {
+    grid-column: 17 / 25;
   }
 }
 
