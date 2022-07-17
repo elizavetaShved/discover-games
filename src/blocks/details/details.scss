@@ -1,12 +1,17 @@
 @import "src/scss/sizes";
 
 .details {
-  @include for-md-up {
+  @include for-fl-up {
     grid-column: 18 / 25;
+  }
+
+  @include for-md-up {
+    grid-column: 17 / 25;
   }
 
   &__title {
     padding-left: 26px;
+    padding-right: 30px;
     margin-bottom: 16px;
     display: inline-block;
     position: relative;
@@ -29,8 +34,7 @@
       position: absolute;
       content: 'THC';
       top: 0;
-      right: -4px;
-      transform: translateX(100%);
+      right: 0;
       padding: 2px;
       background: var(--blue-middle-color);
       border-radius: 2px;
@@ -49,6 +53,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 18px;
+
+    @include for-xs-down {
+      flex-direction: column;
+    }
   }
 
   &__code-caption {
@@ -59,6 +67,15 @@
     margin-right: 22px;
     width: 100%;
     flex: 1 1 100%;
+
+    @include for-hg-down {
+      margin-right: 16px;
+    }
+
+    @include for-xs-down {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__copy-btn {
@@ -66,13 +83,19 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding: 20px 32px 20px 20px;
+    padding: 20px;
     margin: -20px;
     background-image: url("/img/copy-white.svg");
     background-size: 10px;
     background-position: top 50% right 20px;
     background-repeat: no-repeat;
     transition: background-image var(--transition-duration-short);
+
+    @include for-xs-down {
+      padding: 10px 0;
+      margin: -10px 0;
+      background-position: top 50% right 0;
+    }
 
     &:hover {
       background-image: url("/img/copy-green.svg");
@@ -84,8 +107,8 @@
   }
 
   &__copy-btn-text {
-    width: 100%;
-    flex: 1 1 100%;
+    width: calc(100% - 12px);
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -171,15 +194,39 @@
     justify-content: space-between;
     margin-top: 18px;
     border-radius: 3px;
+
+    @include for-hg-down {
+      flex-direction: column;
+    }
+
+    @include for-md-down {
+      flex-direction: row;
+    }
+
+    @include for-xs-down {
+      flex-direction: column;
+    }
   }
 
   &__converter-field {
     padding: 2px 10px;
     background: var(--purple-dark-background);
     border-radius: 1px;
-    width: 100%;
-    flex: 1 1 100%;
+    width: 90px;
+    flex: 1 1 90px;
     text-align: center;
+
+    @include for-hg-down {
+      flex: auto;
+    }
+
+    @include for-md-down {
+      flex: 1 1 90px;
+    }
+
+    @include for-xs-down {
+      flex: auto;
+    }
   }
 
   &__converter-unit-wrapper {
@@ -188,7 +235,19 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1;
-    margin: 0 22px;
+    margin: 0 10px;
+
+    @include for-hg-down {
+      margin: 10px 0;
+    }
+
+    @include for-md-down {
+      margin: 0 10px;
+    }
+
+    @include for-xs-down {
+      margin: 10px 0;
+    }
   }
 
   &__converter-unit {

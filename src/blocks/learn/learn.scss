@@ -1,28 +1,69 @@
 @import "src/scss/sizes";
 
 .learn {
-  @include for-md-up {
+  @include for-fl-up {
     grid-column: 18 / 25;
+  }
+
+  @include for-md-up {
+    grid-column: 17 / 25;
   }
 
   &__content-wrapper {
     display: flex;
+
+    @include for-hg-down  {
+      flex-direction: column;
+    }
   }
 
   &__content-icon {
     margin-left: 30px;
     height: 80px;
+    object-fit: contain;
+
+    @include for-hg-down {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+
+    @include for-md-down {
+      margin-left: 30px;
+      margin-top: 0;
+    }
   }
 
   &__btns-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
     width: 80%;
+
+    @include for-fl-down {
+      width: 100%;
+    }
+
+    @include for-hg-down {
+      grid-template-columns: 1fr;
+    }
+
+    @include for-md-down {
+      grid-template-columns: repeat(2, auto);
+      width: 60%;
+    }
+
+    @include for-mb-down {
+      width: 100%;
+    }
+
+    @include for-xs-down {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__btn {
     white-space: nowrap;
-    & + & {
-      margin-left: 10px;
-    }
+    width: 100%;
+    flex: 1 1 100%;
   }
 }

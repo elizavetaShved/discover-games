@@ -1,8 +1,12 @@
 @import "src/scss/sizes";
 
 .main-info {
-  @include for-md-up {
+  @include for-fl-up {
     grid-column: 1 / 18;
+  }
+
+  @include for-md-up {
+    grid-column: 1 / 17;
     grid-row: 3 / 8;
   }
 
@@ -78,6 +82,11 @@
     iframe {
       width: 626px;
       height: 356px;
+
+      @include for-fl-down {
+        width: 432px;
+        height: 246px;
+      }
 
       @include for-md-down {
         width: calc(#{$small} - (16px + var(--page-content-padding)) * 2);
