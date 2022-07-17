@@ -2,6 +2,8 @@
 
 mixin social()
   - const tabs = [{value: "twitter", text: "Twitter", isChecked: true}, {value: "youtube", text: "Youtube"}];
+  - const twitterPlug = [null, null, null, null];
+  - const youtubePlug = [null];
 
   .social.gl-block#social-host
     h2.gl-title Social
@@ -10,13 +12,17 @@ mixin social()
       .social__tabs-wrapper
         each tab in tabs
           label.social__tab-wrapper
-            input(type="radio", name="social-tab", value=tab.value, checkes=tab.isChecked).social__tab.js-tab
+            input(type="radio", name="social-tab", value=tab.value, checked=tab.isChecked).social__tab.js-tab
             .social__tab-content= tab.text
 
       ul(data-value="twitter").social__posts-list.js-content
-        li.social__post-item twitter
-        li.social__post-item twitter
-        li.social__post-item twitter
+        each post in twitterPlug
+          li.social__post-item
+            // вместо img вставить пост с twitter
+            img(src="img/data-jpegs/twitter-plug.jpg").social__post-plug
 
       ul(data-value="youtube").social__posts-list.js-content
-        li.social__post-item youtube
+        each post in youtubePlug
+          li.social__post-item
+            // вместо img вставить пост с youtube
+            img(src="img/data-jpegs/twitter-plug.jpg").social__post-plug
