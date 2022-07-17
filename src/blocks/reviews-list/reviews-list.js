@@ -14,6 +14,7 @@ class ReviewsList {
     this.ratingsWrapperElems = Array.from(hostElem.querySelectorAll('.js-ratings-wrapper'));
     this.btnsMore = Array.from(hostElem.querySelectorAll('.js-btn-more'));
     const swiperContainerElem = hostElem.querySelector('#js-swiper-container');
+    const swiperPaginationElem = hostElem.querySelector('#js-pagination-slider');
 
     this.btnsMore.forEach((btn, index) => {
       btn.onclick = () => {
@@ -27,7 +28,7 @@ class ReviewsList {
       5,
       null,
       null,
-      null,
+      swiperPaginationElem,
       20,
       false
     );

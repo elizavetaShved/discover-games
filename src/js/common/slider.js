@@ -26,7 +26,8 @@ export default class Slider {
       loop: isLoop,
       speed: 400,
       pagination: {
-        el: paginationElem
+        el: paginationElem,
+        clickable: true
       },
       navigation: {
         prevEl: btnPrev,
