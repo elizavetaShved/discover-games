@@ -79,7 +79,7 @@
     transition: all var(--transition-duration-short);
 
     &--like {
-      background-image: url("/img/play-now-icons/heart-empty.svg");
+      background-image: url("../img/play-now-icons/heart-empty.svg");
       margin-top: 6px;
       margin-left: 10px;
 
@@ -88,55 +88,55 @@
       }
 
       &:hover {
-        background-image: url("/img/play-now-icons/heart-filled.svg");
+        background-image: url("../img/play-now-icons/heart-filled.svg");
       }
     }
 
     &--home {
-      background-image: url("/img/play-now-icons/home-empty.svg");
+      background-image: url("../img/play-now-icons/home-empty.svg");
 
       &:hover {
-        background-image: url("/img/play-now-icons/home-empty.svg");
+        background-image: url("../img/play-now-icons/home-empty.svg");
       }
     }
 
     &--twitter {
-      background-image: url("/img/social/twitter-empty.svg");
+      background-image: url("../img/social/twitter-empty.svg");
 
       &:hover {
-        background-image: url("/img/social/twitter-empty.svg");
+        background-image: url("../img/social/twitter-empty.svg");
       }
     }
 
     &--discord {
-      background-image: url("/img/social/discord-empty.svg");
+      background-image: url("../img/social/discord-empty.svg");
 
       &:hover {
-        background-image: url("/img/social/discord-empty.svg");
+        background-image: url("../img/social/discord-empty.svg");
       }
     }
 
     &--telegram {
-      background-image: url("/img/social/telegram-empty.svg");
+      background-image: url("../img/social/telegram-empty.svg");
 
       &:hover {
-        background-image: url("/img/social/telegram-empty.svg");
+        background-image: url("../img/social/telegram-empty.svg");
       }
     }
 
     &--facebook {
-      background-image: url("/img/social/facebook-empty.svg");
+      background-image: url("../img/social/facebook-empty.svg");
 
       &:hover {
-        background-image: url("/img/social/facebook-empty.svg");
+        background-image: url("../img/social/facebook-empty.svg");
       }
     }
 
     &--youtube {
-      background-image: url("/img/social/youtube-empty.svg");
+      background-image: url("../img/social/youtube-empty.svg");
 
       &:hover {
-        background-image: url("/img/social/youtube-empty.svg");
+        background-image: url("../img/social/youtube-empty.svg");
       }
     }
   }

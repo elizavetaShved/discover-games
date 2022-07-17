@@ -55,12 +55,12 @@
       }
 
       &:before {
-        background-image: url("/img/arrow-wite.svg");
+        background-image: url("../img/arrow-wite.svg");
         opacity: 1;
       }
 
       &:after {
-        background-image: url("/img/arrow-purple.svg");
+        background-image: url("../img/arrow-purple.svg");
         opacity: 0;
       }
     }
