@@ -1,0 +1,18 @@
+//- Все примеси в этом файле должны начинаться c имени блока (more-articles)
+
+mixin more-articles()
+  - const list = [{date: "Mart 10, 2022", title: "Guild Accelerator Program", text: "Cohort 2022 Full details about the program https://docsend.com/view/vn8hwjff7gg8ms4u OVERVIEW Guild Accelerator Program (G.A.P)", img: "img/data-jpegs/guild-accelerator-program.jpg"}, {date: "Mart 10, 2022", title: "Guild Accelerator Program", text: "Cohort 2022 Full details about the program https://docsend.com/view/vn8hwjff7gg8ms4u OVERVIEW Guild Accelerator Program (G.A.P)", img: "img/data-jpegs/guild-accelerator-program.jpg"}, {date: "Mart 10, 2022", title: "Guild Accelerator Program", text: "Cohort 2022 Full details about the program https://docsend.com/view/vn8hwjff7gg8ms4u OVERVIEW Guild Accelerator Program (G.A.P)", img: "img/data-jpegs/guild-accelerator-program.jpg"}, {date: "Mart 10, 2022", title: "Guild Accelerator Program", text: "Cohort 2022 Full details about the program https://docsend.com/view/vn8hwjff7gg8ms4u OVERVIEW Guild Accelerator Program (G.A.P)", img: "img/data-jpegs/guild-accelerator-program.jpg"}, {date: "Mart 10, 2022", title: "Guild Accelerator Program", text: "Cohort 2022 Full details about the program https://docsend.com/view/vn8hwjff7gg8ms4u OVERVIEW Guild Accelerator Program (G.A.P)", img: "img/data-jpegs/guild-accelerator-program.jpg"}];
+
+  .more-articles.gl-block
+    .more-articles__header-wrapper
+      h2.gl-title More articles
+      .gl-subtitle Latest news and game updates
+
+    ul.more-articles__list-wrapper
+      each item in list
+        li.more-articles__item-wrapper
+          .more-articles__item-info
+            .more-articles__item-date= item.date
+            .more-articles__item-title= item.title
+            .more-articles__item-text= item.text
+          img(src=item.img).more-articles__item-img

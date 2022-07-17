@@ -1,0 +1,53 @@
+@import "src/scss/sizes";
+
+.more-articles {
+  @include for-md-up {
+    grid-column: 18 / 25;
+  }
+
+  &__header-wrapper {
+    margin-bottom: 28px;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    padding: 6px 0 16px 0;
+    border-top: 1px solid var(--gray-color-opasity);
+    border-bottom: 1px solid transparent;
+
+    &:last-child {
+      border-bottom-color: var(--gray-color-opasity);
+    }
+  }
+
+  &__item-info {
+    mso-row-margin-right: 20px;
+  }
+
+  &__item-date {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: var(--gray-color-opasity);
+    margin-bottom: 4px;
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--purple-color);
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(250, 250, 250, .8);
+  }
+
+  &__item-img {
+    height: 70px;
+  }
+}
