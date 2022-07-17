@@ -21,6 +21,4 @@ export class Header {
   }
 }
 
-window.addEventListener('load', () => {
-  new Header();
-})
+new Header();

@@ -14,6 +14,7 @@ require('../blocks/main-slider/main-slider.js');
 require('../blocks/marketplace/marketplace.js');
 require('../blocks/reviews-list/reviews-list.js');
 require('../blocks/side-bar/side-bar.js');
+require('../blocks/social/social.js');
 require('./script.js');
 
 /*!*

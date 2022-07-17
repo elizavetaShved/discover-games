@@ -12,6 +12,4 @@ export class LangSelect {
   }
 }
 
-window.addEventListener('load', () => {
-  new LangSelect();
-});
+new LangSelect();
