@@ -30,17 +30,17 @@ export default class Slider {
         nextEl: btnNext
       },
       breakpoints: {
-        481: {
+        479: {
           slidesPerView: slidesPerView.md || slidesPerView.hg || slidesPerView.fl || slidesPerView.mx
         },
-        769: {
+        767: {
           spaceBetween: gap - 10 > 16 ? gap - 10 : 16,
           slidesPerView: slidesPerView.hg || slidesPerView.fl || slidesPerView.mx
         },
-        1025: {
+        1023: {
         slidesPerView: slidesPerView.fl || slidesPerView.mx
         },
-        1281: {
+        1279: {
           spaceBetween: gap,
           slidesPerView: slidesPerView.mx || 'auto'
         }

@@ -3,6 +3,7 @@
 :root {
   --page-content-padding: 32px;
   --header-height: 166px;
+  --block-padding-side: 30px;
   --main-grid-gap: 20px;
 
   @include for-mx-down {
@@ -15,6 +16,7 @@
 
   @include for-hg-down {
     --main-grid-gap: 16px;
+    --block-padding-side: 16px;
   }
 
   @include for-bg-down {

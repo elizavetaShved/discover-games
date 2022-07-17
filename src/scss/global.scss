@@ -18,6 +18,19 @@
   color: var(--gray-light-color);
 }
 
+.gl-link {
+  padding: 10px;
+  margin: -10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.gl-purple-color {
+  color: var(--purple-color);
+}
+
 .gl-layout-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -94,10 +107,11 @@
 .gl-block {
   background: var(--purple-block-color);
   border-radius: var(--border-radius-huge);
-  padding: 30px;
+  padding: var(--block-padding-side);
 
   @include for-hg-down {
-    padding: 26px 16px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   &--gradient {
