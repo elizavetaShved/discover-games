@@ -3,7 +3,7 @@ import Slider from "../../js/common/slider";
 const CARDS_IN_SLIDE = 5;
 const PADDING_CARD = 24;
 const GAP_CARDS = 20;
-const CONTAINER_PADDING_BOTTOM = 32;
+const CONTAINER_PADDING_BOTTOM = 50;
 const BUTTON_PADDING_TOP = 22;
 
 class ReviewsList {
@@ -22,6 +22,8 @@ class ReviewsList {
     if (!hostElem) return;
 
     this.ratingsContainerElems = Array.from(hostElem.querySelectorAll('.js-ratings-container'));
+    const btnPrev = hostElem.querySelector('#js-btn-prev');
+    const btnNext = hostElem.querySelector('#js-btn-next');
     this.ratingsWrapperElems = Array.from(hostElem.querySelectorAll('.js-ratings-wrapper'));
     this.btnsMore = Array.from(hostElem.querySelectorAll('.js-btn-more'));
     this.btnsMoreContent = Array.from(hostElem.querySelectorAll('.js-btn-more-content'));
@@ -40,8 +42,8 @@ class ReviewsList {
       this.swiperContainerElem,
       { mx: 1 },
       CARDS_IN_SLIDE,
-      null,
-      null,
+      btnPrev,
+      btnNext,
       swiperPaginationElem,
       20,
       false
