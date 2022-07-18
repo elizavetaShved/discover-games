@@ -3,7 +3,7 @@
 mixin social()
   - const tabs = [{value: "twitter", text: "Twitter", isChecked: true}, {value: "youtube", text: "Youtube"}];
   - const twitterPlug = [null, null];
-  - const youtubePlug = [null];
+  - const youtubePlug = [null, null, null];
 
   .social.gl-block#social-host
     h2.gl-title Social
@@ -19,10 +19,22 @@ mixin social()
         each post in twitterPlug
           li.social__post-item
             // вместо img вставить пост с twitter
-            img(src="img/data-jpegs/twitter-plug.jpg").social__post-plug
+            blockquote(data-theme="dark").twitter-tweet
+              p(lang="en", dir="ltr") A brand new feature will be called Marketplace Quest<br><br>Completing quests on the marketplace will grand users the ultimate chance to acquire an NFT hero and other valuable items<br><br>📅 From July 22th<br><br>Find out more about Marketplace Quest<br>👉
+                a(href="https://t.co/TL1uIBEB58\">https://t.co/TL1uIBEB58") July 18, 2022
+                div &mdash; Thetan Arena (@ThetanArena)
+              a(href="https://twitter.com/ThetanArena/status/1549001045522534400?ref_src=twsrc%5Etfw") July 18, 2022
+            script(async, src="https://platform.twitter.com/widgets.js", charset="utf-8")
+
+            //img(src="img/data-jpegs/twitter-plug.jpg").social__post-plug
 
       ul(data-value="youtube").social__posts-list.js-content
         each post in youtubePlug
-          li.social__post-item
-            // вместо img вставить пост с youtube
-            img(src="img/data-jpegs/twitter-plug.jpg").social__post-plug
+          li.social__post-item.social__post-item--youtube
+            iframe(
+              src="https://www.youtube.com/embed/tOUDd8NPgiY",
+              title="YouTube video player",
+              frameborder="0",
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+              allowfullscreen
+              )
