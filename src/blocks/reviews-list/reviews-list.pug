@@ -13,10 +13,11 @@ mixin reviews-list()
         .gl-swiper__swiper-wrapper.swiper-wrapper
           each item in reviewsList
             li.reviews-list__item-wrapper.swiper-slide.js-swiper-slide
-              .reviews-list__item-repost= item.repostNum
+              .reviews-list__item-repost.gl-mb-hide= item.repostNum
               .reviews-list__item-content
                 .js-fix-content
                   .reviews-list__item-header
+                    .reviews-list__item-repost.gl-mb-show= item.repostNum
                     +rating(item.assessment)
                     .reviews-list__item-date= item.date
 

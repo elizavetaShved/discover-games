@@ -83,6 +83,9 @@
     @include for-mb-down {
       flex: 0 0 80px;
       width: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 

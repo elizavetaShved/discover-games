@@ -3,6 +3,7 @@ import Slider from "../../js/common/slider";
 const CARDS_IN_SLIDE = 5;
 const PADDING_CARD = 24;
 const GAP_CARDS = 20;
+const GAP_CARDS_MOBILE = 16;
 const CONTAINER_PADDING_BOTTOM = 50;
 const BUTTON_PADDING_TOP = 22;
 
@@ -100,7 +101,8 @@ class ReviewsList {
       }
     })
 
-    heightContainer += GAP_CARDS * (CARDS_IN_SLIDE - 1) + CONTAINER_PADDING_BOTTOM;
+    let gap = window.innerWidth < 768 ? GAP_CARDS_MOBILE : GAP_CARDS;
+    heightContainer += gap * (CARDS_IN_SLIDE - 1) + CONTAINER_PADDING_BOTTOM;
 
     if (this.activeContent !== null) {
       heightContainer += this.ratingsWrapperElems[this.activeContent].clientHeight;
