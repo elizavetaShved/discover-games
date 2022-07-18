@@ -22,8 +22,7 @@
 
   &__swiper-container {
     overflow: hidden;
-    //height: 1340px; // todo испр
-    height: 1200px;
+    transition: max-height var(--transition-duration-big);
   }
 
   &__item-wrapper {

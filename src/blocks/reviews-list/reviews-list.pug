@@ -12,15 +12,16 @@ mixin reviews-list()
       .swiper.reviews-list__swiper-container.gl-swiper.swiper-container#js-swiper-container
         .gl-swiper__swiper-wrapper.swiper-wrapper
           each item in reviewsList
-            li.reviews-list__item-wrapper.swiper-slide
+            li.reviews-list__item-wrapper.swiper-slide.js-swiper-slide
               .reviews-list__item-repost= item.repostNum
               .reviews-list__item-content
-                .reviews-list__item-header
-                  +rating(item.assessment)
-                  .reviews-list__item-date= item.date
+                .js-fix-content
+                  .reviews-list__item-header
+                    +rating(item.assessment)
+                    .reviews-list__item-date= item.date
 
-                .reviews-list__item-title= item.title
-                .reviews-list__item-text= item.text
+                  .reviews-list__item-title= item.title
+                  .reviews-list__item-text= item.text
                 .reviews-list__ratings-list-container.js-ratings-container
                   .reviews-list__ratings-list-wrapper.js-ratings-wrapper
                     each rating in item.ratingsList
@@ -29,7 +30,8 @@ mixin reviews-list()
                         +rating(rating.rate)
 
                 button(type="button").reviews-list__btn-more-less.js-btn-more
-                  .reviews-list__btn-text-more View More
-                  .reviews-list__btn-text-less View Less
+                  .js-btn-more-content
+                    .reviews-list__btn-text-more View More
+                    .reviews-list__btn-text-less View Less
 
         .reviews-list__swiper-pagination.gl-swiper__pagination.swiper-pagination#js-pagination-slider

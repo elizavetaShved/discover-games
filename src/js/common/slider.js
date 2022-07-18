@@ -51,4 +51,8 @@ export default class Slider {
       }
     })
   }
+
+  getActiveSlide() {
+    return this.swiper.activeIndex;
+  }
 }
